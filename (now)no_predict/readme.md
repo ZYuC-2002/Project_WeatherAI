@@ -1,0 +1,3 @@
+temperature -> blank
+
+weather -> minimal
