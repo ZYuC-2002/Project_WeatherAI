@@ -2,7 +2,7 @@
 
 ---
 temperature -> blank <br>
-weather -> minimal
+weather -> minimal **(應該會用這個)**
 
 ---
 - initialize (expo-cli) : `npx expo init <project_name>`
