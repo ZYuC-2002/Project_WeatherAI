@@ -1,14 +1,12 @@
-# React Native - Basic
+# API
 
----
-temperature -> blank <br>
-weather -> minimal **(應該會用這個)**
+## 當前溫度
+- [自動氣象站-氣象觀測資料 (更新頻率:1小時)](https://opendata.cwa.gov.tw/dataset/observation/O-A0001-001) : CoordinateFormat、CoordinateName、StationLatitude、StationLongitude、CountyCode、CountyName、StationAltitude、TownCode、TownName、DateTime、AirPressure、AirTemperature、WindDirection、PeakGustSpeed、Precipitation、RelativeHumidity、Weather、WindSpeed
+- [現在天氣觀測報告-現在天氣觀測報告 (更新頻率:10分鐘)](https://opendata.cwa.gov.tw/dataset/observation/O-A0003-001) : CoordinateFormat、CoordinateName、StationLatitude、StationLongitude、CountyCode、CountyName、StationAltitude、TownCode、TownName、DateTime、AirPressure、AirTemperature、GustInfo、WindDirection、PeakGustSpeed、WindSpeed、Precipitation、RelativeHumidity、SunshineDuration、UVI
 
----
-- initialize (expo-cli) : `npx expo init <project_name>`
-  - 選擇template(下圖畫面)時，我選擇的是 `minimal`。<br>
-    ![img](https://github.com/ZYuC-2002/Project_WeatherAI/blob/master/(now)no_predict/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-03-31%20014249.png)
-    但我發現 `blank` 和 `minimal` 都差不多，只是 `minimal` 的預設檔案(?)多了 `android` 和 `ios` (目測，詳細請觀察 temperature專案 (`blank`) 及 weather專案 (`minimal`) 的差別。)
-- 執行 : `npx expo start`
-- 電腦無法查看執行狀況 (除非下載模擬器)，需使用Android或iOS手機下載 `Expo` APP ，並掃描QRcode或自行輸入網址，才能查看畫面。
-- 程式碼每次儲存時，手機APP會自動更新畫面，若有bug也會顯示在畫面中。
+## 當日最高 / 最低溫
+- 應該可以用*一週內天氣預報(七天)*的資料
+
+## 一週內天氣預報
+- 以**天**為一個單位 : [一般天氣預報-七天天氣預報 (更新頻率:6小時)](https://opendata.cwa.gov.tw/dataset/forecast/F-C0032-003) -> Wx(天氣現象)、**MaxT(最高溫度)**、**MinT(最低溫度)**
+- 一天兩次 (6.~18. / 18.~6.) : [一般天氣預報-一週縣市天氣預報 (更新頻率:6小時)](https://opendata.cwa.gov.tw/dataset/forecast/F-C0032-005) -> Wx(天氣現象)、**MaxT(最高溫度)**、**MinT(最低溫度)**
