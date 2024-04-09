@@ -1,3 +1,14 @@
-- (now)no_predict : 目前正在執行中，主要為React Native。
-- seriously : LSTM (PyTorch) 預測氣溫，目前先改為使用中央氣象局之API，因此這部分先暫停。
-- try_weatherAPI : 最一開始嘗試用Python使用中央氣象局API，後改為使用React Native，因此這部分已無作用。
+# API
+
+## 當前溫度
+- [自動氣象站-氣象觀測資料 (更新頻率:1小時)](https://opendata.cwa.gov.tw/dataset/observation/O-A0001-001) : CoordinateFormat、CoordinateName、StationLatitude、StationLongitude、CountyCode、CountyName、StationAltitude、TownCode、TownName、DateTime、AirPressure、AirTemperature、WindDirection、PeakGustSpeed、Precipitation、RelativeHumidity、Weather、WindSpeed
+- [現在天氣觀測報告-現在天氣觀測報告 (更新頻率:10分鐘)](https://opendata.cwa.gov.tw/dataset/observation/O-A0003-001) : CoordinateFormat、CoordinateName、StationLatitude、StationLongitude、CountyCode、CountyName、StationAltitude、TownCode、TownName、DateTime、AirPressure、AirTemperature、GustInfo、WindDirection、PeakGustSpeed、WindSpeed、Precipitation、RelativeHumidity、SunshineDuration、UVI
+
+## 當日最高 / 最低溫
+- 應該可以用*一週內天氣預報(七天)*的資料
+
+## 一週內天氣預報
+- 以**天**為一個單位 : [一般天氣預報-七天天氣預報 (更新頻率:6小時)](https://opendata.cwa.gov.tw/dataset/forecast/F-C0032-003) -> Wx(天氣現象)、**MaxT(最高溫度)**、**MinT(最低溫度)**
+- 一天兩次 (6.~18. / 18.~6.) : [一般天氣預報-一週縣市天氣預報 (更新頻率:6小時)](https://opendata.cwa.gov.tw/dataset/forecast/F-C0032-005) -> Wx(天氣現象)、**MaxT(最高溫度)**、**MinT(最低溫度)**
+
+> 偶ㄉAPI授權碼: CWA-FADE6AC3-54FB-452F-BC9D-2A94204257D6
