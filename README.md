@@ -8,7 +8,6 @@
 - 應該可以用*一週內天氣預報(七天)*的資料
 
 ## 一週內天氣預報
-- 以**天**為一個單位 : [一般天氣預報-七天天氣預報 (更新頻率:6小時)](https://opendata.cwa.gov.tw/dataset/forecast/F-C0032-003) -> Wx(天氣現象)、**MaxT(最高溫度)**、**MinT(最低溫度)**
 - 一天兩次 (6.~18. / 18.~6.) : [一般天氣預報-一週縣市天氣預報 (更新頻率:6小時)](https://opendata.cwa.gov.tw/dataset/forecast/F-C0032-005) -> Wx(天氣現象)、**MaxT(最高溫度)**、**MinT(最低溫度)**
 
 > 偶ㄉAPI授權碼: CWA-FADE6AC3-54FB-452F-BC9D-2A94204257D6
